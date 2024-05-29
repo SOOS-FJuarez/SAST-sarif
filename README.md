@@ -1,2 +1,1 @@
 # SAST-sarif
-
