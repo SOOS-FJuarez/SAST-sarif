@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
       - uses: actions/checkout@master
       - name: Run SOOS SAST Analysis
         uses: soos-io/soos-sast-github-action@1e08c26a985b73e05ab40b7096dd8465711ec0e6 #GET Latest Version from https://github.com/marketplace/actions/soos-sast
@@ -17,7 +14,7 @@ jobs:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"
-          project_name: "GHActions-SAST-test-QA"
+          project_name: "GHActions-SAST-test-QA-NO-NODE"
           sast_version: 1.0.0-pre.1
           log_level: DEBUG
           #verbose: true
