@@ -1,11 +1,15 @@
 
 on: [push]
 
-jobs:
+jobs:   
   soos_sast_analysis_example:
     name: SOOS SAST Analysis Example
     runs-on: ubuntu-latest
+  
     steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - uses: actions/checkout@master
       - name: Run SOOS SAST Analysis
         uses: soos-io/soos-sast-github-action@1e08c26a985b73e05ab40b7096dd8465711ec0e6 #GET Latest Version from https://github.com/marketplace/actions/soos-sast
@@ -14,7 +18,7 @@ jobs:
           api_key: ${{ secrets.SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"
           project_name: "GHActions-SAST-test"
-          sast_version: invalid #0.1.29
+          sast_version: 1.0.0-pre.1
           log_level: DEBUG
-          verbose: true
+          #verbose: true
           
