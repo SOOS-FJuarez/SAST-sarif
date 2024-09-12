@@ -13,9 +13,9 @@ jobs:
         uses: soos-io/soos-sast-github-action@1e08c26a985b73e05ab40b7096dd8465711ec0e6 #GET Latest Version from https://github.com/marketplace/actions/soos-sast
         with:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
-          api_key: ${{ secrets.SOOS_API_KEY }}
+          api_key: invalidValue #${{ secrets.SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"
-          project_name: "GHActions-SAST-9"
+          project_name: "GHActions-SAST-1"
           sast_version: 1.0.0-pre.11
-          directories_to_exclude: projectB/**
-          files_to_exclude: new-project/BuildOutput.sarif.json
+          log_level: DEBUG
+          #verbose: true
