@@ -15,7 +15,8 @@ jobs:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"
-          project_name: "GHActions-SAST-12"
+          project_name: "GHActions-SAST-13"
           sast_version: 1.0.0-pre.11
           log_level: INFO
           on_failure: continue_on_failure
+          verbose: true
