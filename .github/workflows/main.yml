@@ -19,3 +19,4 @@ jobs:
           sast_version: 1.0.0-pre.1
           log_level: INFO
           on_failure: continue_on_failure
+          verbose: true
