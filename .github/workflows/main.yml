@@ -18,4 +18,4 @@ jobs:
           project_name: "GHActions-SAST-8"
           sast_version: 1.0.0-pre.11
           #directories_to_exclude: projectB/sarif-files/**
-          files_to_exclude: sarif-files/image_resizer_semgrep_output.sarif.json
+          files_to_exclude: projectB/sarif-files/image_resizer_semgrep_output.sarif.json
