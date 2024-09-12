@@ -15,7 +15,7 @@ jobs:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"
-          project_name: "GHActions-SAST-4"
+          project_name: "GHActions-SAST-5"
           sast_version: 1.0.0-pre.1
           log_level: DEBUG
-          branch_name: notIncluded
+          branch_name: included
