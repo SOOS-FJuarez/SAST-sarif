@@ -17,4 +17,5 @@ jobs:
           api_url: "https://qa-api.soos.io/api/"
           project_name: "GHActions-SAST-10"
           sast_version: 1.0.0-pre.1
-          log_level: DEBUG
+          log_level: INFO
+          on_failure: fail_the_build
