@@ -16,6 +16,6 @@ jobs:
           api_key: ${{ secrets.SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"
           project_name: "GHActions-SAST-7"
-          sast_version: 1.0.0-pre.1
+          sast_version: 1.0.0-pre.11
           #directories_to_exclude: projectB/**
           #files_to_exclude: 
