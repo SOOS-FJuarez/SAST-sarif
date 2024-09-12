@@ -15,7 +15,7 @@ jobs:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"
-          project_name: "GHActions-SAST-7"
+          project_name: "GHActions-SAST-8"
           sast_version: 1.0.0-pre.11
-          directories_to_exclude: projectB/sarif-files/**
-          #files_to_exclude: 
+          #directories_to_exclude: projectB/sarif-files/**
+          files_to_exclude: sarif-files/image_resizer_semgrep_output.sarif.json
