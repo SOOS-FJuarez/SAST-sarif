@@ -10,12 +10,12 @@ jobs:
           node-version: 20
       - uses: actions/checkout@master
       - name: Run SOOS SAST Analysis
-        uses: soos-io/soos-sast-github-action@v1 #GET Latest Version from https://github.com/marketplace/actions/soos-sast
+        uses: soos-io/soos-sast-github-action@1051d70375d7deb2fe91c815538bec71d0a458a8 #GET Latest Version from https://github.com/marketplace/actions/soos-sast
         with:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
-          #api_url: "https://qa-api.soos.io/api/"
+          api_url: "https://qa-api.soos.io/api/"
           project_name: "GHActions-SAST"
-          sast_version: latest
-          log_level: debug
+          sast_version: 1.0.2-pre.1
+          log_level: INFO
           verbose: true
